@@ -1,0 +1,334 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj": {}
+  },
+  "projects": {
+    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj",
+        "projectName": "QuiosqueFood3000.Api",
+        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj",
+        "packagesPath": "/home/toshio/.nuget/packages/",
+        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/toshio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj": {
+                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj"
+              },
+              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj": {
+                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "ServiceStack.Interfaces": {
+              "target": "Package",
+              "version": "[8.6.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj",
+        "projectName": "QuiosqueFood3000.Application",
+        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj",
+        "packagesPath": "/home/toshio/.nuget/packages/",
+        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/toshio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj": {
+                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj",
+        "projectName": "QuiosqueFood3000.Domain",
+        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj",
+        "packagesPath": "/home/toshio/.nuget/packages/",
+        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/toshio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj",
+        "projectName": "QuiosqueFood3000.Infraestructure",
+        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj",
+        "packagesPath": "/home/toshio/.nuget/packages/",
+        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/toshio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj": {
+                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
