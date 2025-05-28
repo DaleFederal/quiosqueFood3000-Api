@@ -294,3 +294,4 @@ D:\Downloads\[FIAP]\Dale\DaleFederal\quiosqueFood3000-Api\QuiosqueFood3000.Api\o
 D:\Downloads\[FIAP]\Dale\DaleFederal\quiosqueFood3000-Api\QuiosqueFood3000.Api\obj\Debug\net8.0\Quiosque.EFF340FF.Up2Date
 D:\Downloads\[FIAP]\Dale\DaleFederal\quiosqueFood3000-Api\QuiosqueFood3000.Api\obj\Debug\net8.0\QuiosqueFood3000.Api.genruntimeconfig.cache
 D:\Downloads\[FIAP]\Dale\DaleFederal\quiosqueFood3000-Api\QuiosqueFood3000.Api\obj\Debug\net8.0\ref\QuiosqueFood3000.Api.dll
+D:\Downloads\[FIAP]\Dale\DaleFederal\quiosqueFood3000-Api\QuiosqueFood3000.Api\bin\Debug\net8.0\Newtonsoft.Json.dll

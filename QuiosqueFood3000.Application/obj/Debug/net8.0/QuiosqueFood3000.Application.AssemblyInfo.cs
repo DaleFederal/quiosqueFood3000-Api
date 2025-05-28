@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuiosqueFood3000.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f225a328631fa742895879d66ff0f1599c4dc69b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f52df6042bfdb049c795fc88e3c191e5cb486697")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuiosqueFood3000.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuiosqueFood3000.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
