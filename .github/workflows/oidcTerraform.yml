@@ -1,0 +1,39 @@
+name: Deploy com OIDC
+
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Autenticar na AWS via OIDC
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        role-to-assume: arn:aws:iam::0068-4024-5677:role/github-actions-oidc-role
+        aws-region: us-east-1
+
+    - name: Validar acesso AWS
+      run: aws sts get-caller-identity
+
+    # Exemplo opcional: rodar Terraform
+    - name: Set up Terraform
+      uses: hashicorp/setup-terraform@v2
+      with:
+        terraform_version: 1.6.6
+
+    - name: Terraform init
+      working-directory: infra
+      run: terraform init
+
+    - name: Terraform apply
+      working-directory: infra
+      run: terraform apply -auto-approve
