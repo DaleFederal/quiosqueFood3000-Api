@@ -5,23 +5,30 @@ using QuiosqueFood3000.Api.Services.Interfaces;
 using QuiosqueFood3000.Api.Validators;
 using QuiosqueFood3000.Domain.Entities;
 using QuiosqueFood3000.Infraestructure.Repositories.Interfaces;
+using System.Net.Http.Headers;
+using QuiosqueFood3000.Api.Helpers;
 
 
 namespace QuiosqueFood3000.Application.Services;
 
-public class CustomerService(ICustomerRepository customerRepository) : ICustomerService
+public class CustomerService() : ICustomerService
 {
     public async Task<CustomerDto?> GetCustomerByCpf(string cpf)
     {
         var httpClient = new HttpClient();
+        string bearerToken = await GoogleCloudHelper.GetBearerToken("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBcWXnfmt7rN3JQ-b14brXypwg9Wmeu7Ow");
+        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
         var response = httpClient.PostAsync(
             "https://us-central1-quiosquefood3000.cloudfunctions.net/get-customer?cpf=" + cpf,
             null
         ).GetAwaiter().GetResult();
-
+        if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+        {
+            return null;
+        }
         if (!response.IsSuccessStatusCode)
         {
-            throw new Exception($"Erro ao chamar função externa: {response.StatusCode}");
+            throw new Exception($"Erro ao chamar consulta de cliente: {response.StatusCode}");
         }
         var responseBody = await response.Content.ReadAsStringAsync();
 
@@ -30,16 +37,21 @@ public class CustomerService(ICustomerRepository customerRepository) : ICustomer
         var root = responseBodyDeserialized?.RootElement;
         if (root == null || root?.ValueKind != JsonValueKind.Array || root?.GetArrayLength() == 0)
         {
-            throw new Exception("Resposta da função externa não contém dados de cliente.");
+            throw new Exception("Cliente não encontrado");
+        }
+        var customerElement = root.Value[0];
+
+        if (root == null || root?.ValueKind != JsonValueKind.Array || root?.GetArrayLength() == 0)
+        {
+            throw new Exception("Cliente não encontrado.");
         }
 
-        // Fix: Ensure `root` is not nullable by using `.Value` before indexing
-        var customerElement = root.Value[0];
         CustomerDto customerDto = new CustomerDto()
         {
             Cpf = customerElement.GetProperty("cpf").GetString(),
-            Name = customerElement.GetProperty("nome").GetString(),
-            Email = customerElement.GetProperty("email").GetString()
+            Name = customerElement.GetProperty("name").GetString(),
+            Email = customerElement.GetProperty("email").GetString(),
+            Id = customerElement.GetProperty("id").GetString()
         };
 
         CustomerDtoValidator customerDtoValidator = new CustomerDtoValidator();
@@ -52,7 +64,7 @@ public class CustomerService(ICustomerRepository customerRepository) : ICustomer
 
         return customerDto;
     }
-    public CustomerDto RegisterCustomer(CustomerDto customerDto)
+    public async Task<CustomerDto> RegisterCustomer(CustomerDto customerDto)
     {
         CustomerDtoValidator customerDtoValidator = new CustomerDtoValidator();
         var resultCustomerDto = customerDtoValidator.Validate(customerDto);
@@ -75,10 +87,9 @@ public class CustomerService(ICustomerRepository customerRepository) : ICustomer
         {
             throw new InvalidDataException(resultCustomer.ToString());
         }
-        // Chamada HTTP para a função externa
         var payload = new
         {
-            nome = customerDto.Name,
+            name = customerDto.Name,
             email = customerDto.Email,
             cpf = customerDto.Cpf
         };
@@ -86,7 +97,13 @@ public class CustomerService(ICustomerRepository customerRepository) : ICustomer
         var json = JsonSerializer.Serialize(payload);
         var content = new StringContent(json, Encoding.UTF8,
         "application/json");
+
         using var httpClient = new HttpClient();
+
+        string bearerToken = await GoogleCloudHelper.GetBearerToken("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBcWXnfmt7rN3JQ-b14brXypwg9Wmeu7Ow");
+
+        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
         var response = httpClient.PostAsync(
             "https://us-central1-quiosquefood3000.cloudfunctions.net/create-customer",
             content
@@ -105,22 +122,30 @@ public class CustomerService(ICustomerRepository customerRepository) : ICustomer
         };
         return customerDto;
     }
-    public void RemoveCustomer(CustomerDto customerDto)
+    public async void RemoveCustomer(CustomerDto customerDto)
     {
-        if (string.IsNullOrWhiteSpace(customerDto.Id))
+        if (string.IsNullOrWhiteSpace(customerDto.Cpf))
         {
-            throw new ArgumentNullException("O Id do cliente deve ser informado");
+            throw new ArgumentNullException("O Cpf do cliente deve ser informado");
         }
-        Customer customer = new Customer()
+
+        using var httpClient = new HttpClient();
+
+        string bearerToken = await GoogleCloudHelper.GetBearerToken("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBcWXnfmt7rN3JQ-b14brXypwg9Wmeu7Ow");
+
+        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
+        var response = httpClient.PostAsync(
+            "https://us-central1-quiosquefood3000.cloudfunctions.net/delete-customer?cpf=" + customerDto.Cpf,
+            null
+        ).GetAwaiter().GetResult();
+
+        if (!response.IsSuccessStatusCode)
         {
-            Id = int.Parse(customerDto.Id),
-            Cpf = customerDto.Cpf,
-            Name = customerDto.Name,
-            Email = customerDto.Email
-        };
-        customerRepository.RemoveCustomer(customer);
+            throw new Exception($"Erro ao chamar função externa: {response.StatusCode}");
+        }
     }
-    public CustomerDto UpdateCustomer(CustomerDto customerDto)
+    public async Task<CustomerDto> UpdateCustomer(CustomerDto customerDto)
     {
 
         if (customerDto == null)
@@ -128,9 +153,9 @@ public class CustomerService(ICustomerRepository customerRepository) : ICustomer
             throw new ArgumentNullException("O cliente não pode ser nulo");
         }
 
-        if (string.IsNullOrWhiteSpace(customerDto.Id))
+        if (string.IsNullOrWhiteSpace(customerDto.Cpf))
         {
-            throw new ArgumentNullException("O Id do cliente deve ser informado");
+            throw new ArgumentNullException("O CPF do cliente deve ser informado");
         }
         CustomerDtoValidator customerDtoValidator = new CustomerDtoValidator();
         var resultCustomerDto = customerDtoValidator.Validate(customerDto);
@@ -154,14 +179,32 @@ public class CustomerService(ICustomerRepository customerRepository) : ICustomer
         {
             throw new InvalidDataException(resultCustomer.ToString());
         }
-        customer = customerRepository.UpdateCustomer(customer);
-        customerDto = new CustomerDto()
+        var payload = new
         {
-            Id = customer.Id.ToString(),
-            Cpf = customer.Cpf,
-            Name = customer.Name,
-            Email = customer.Email
+            name = customerDto.Name,
+            email = customerDto.Email,
+            cpf = customerDto.Cpf
         };
+
+        var json = JsonSerializer.Serialize(payload);
+        var content = new StringContent(json, Encoding.UTF8,
+        "application/json");
+
+        using var httpClient = new HttpClient();
+
+        string bearerToken = await GoogleCloudHelper.GetBearerToken("https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBcWXnfmt7rN3JQ-b14brXypwg9Wmeu7Ow");
+
+        httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
+        var response = httpClient.PostAsync(
+            "https://us-central1-quiosquefood3000.cloudfunctions.net/update-customer?cpf=" + customerDto.Cpf,
+            content
+        ).GetAwaiter().GetResult();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception($"Erro ao chamar função externa: {response.StatusCode}");
+        }
         return customerDto;
     }
 }
