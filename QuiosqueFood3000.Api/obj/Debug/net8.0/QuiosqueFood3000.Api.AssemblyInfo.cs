@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuiosqueFood3000.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a88280861e305f905566cd7150088c26b4ad4c2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+798b974d13472254b3c0c1ecb943476699c336a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuiosqueFood3000.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuiosqueFood3000.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

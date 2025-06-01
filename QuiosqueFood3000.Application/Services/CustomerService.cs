@@ -4,7 +4,6 @@ using QuiosqueFood3000.Api.DTOs;
 using QuiosqueFood3000.Api.Services.Interfaces;
 using QuiosqueFood3000.Api.Validators;
 using QuiosqueFood3000.Domain.Entities;
-using QuiosqueFood3000.Infraestructure.Repositories.Interfaces;
 using System.Net.Http.Headers;
 using QuiosqueFood3000.Api.Helpers;
 
@@ -51,7 +50,7 @@ public class CustomerService() : ICustomerService
             Cpf = customerElement.GetProperty("cpf").GetString(),
             Name = customerElement.GetProperty("name").GetString(),
             Email = customerElement.GetProperty("email").GetString(),
-            Id = customerElement.GetProperty("id").GetString()
+            Id = customerElement.GetProperty("id").GetInt32().ToString()
         };
 
         CustomerDtoValidator customerDtoValidator = new CustomerDtoValidator();
