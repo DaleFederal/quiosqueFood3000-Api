@@ -1,0 +1,42 @@
+name: Build and Push to ECR
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Autenticação no GCP
+      uses: google-github-actions/auth@v2
+      with:
+        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+
+    - name: Configurar Docker para usar o Artifact Registry
+      run: |
+        gcloud auth configure-docker us-central1-docker.pkg.dev
+
+    - name: Construir imagem Docker
+      run: |
+        IMAGE="us-central1-docker.pkg.dev/quiosquefood3000/quiosque-food-repo/quiosque-food-app:${{ github.sha }}"
+        docker build -t $IMAGE .
+
+    - name: Fazer push da imagem para o Artifact Registry
+      run: |
+        IMAGE="us-central1-docker.pkg.dev/quiosquefood3000/quiosque-food-repo/quiosque-food-app:${{ github.sha }}"
+        docker push $IMAGE
+
+    - name: Fazer deploy no Cloud Run
+      run: |
+        IMAGE="us-central1-docker.pkg.dev/quiosquefood3000/quiosque-food-repo/quiosque-food-app:${{ github.sha }}"
+        gcloud run deploy quiosque-food-app \
+          --image $IMAGE \
+          --platform managed \
+          --region us-central1 \
+          --allow-unauthenticated
