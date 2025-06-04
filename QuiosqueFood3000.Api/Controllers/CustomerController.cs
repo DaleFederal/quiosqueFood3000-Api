@@ -56,7 +56,7 @@ public class CustomerController(ICustomerService customerService) : ControllerBa
             {
                 return BadRequest($"Cliente com o CPF: {customerDto.Cpf} já está cadastrado");
             }
-            customerDto = customerService.RegisterCustomer(customerDto);
+            customerDto = await customerService.RegisterCustomer(customerDto);
         }
         catch (Exception ex)
         {
@@ -121,7 +121,7 @@ public class CustomerController(ICustomerService customerService) : ControllerBa
             {
                 return BadRequest($"Cliente com o CPF: {customerDto.Cpf} não está cadastrado");
             }
-            customerDto = customerService.UpdateCustomer(customerDto);
+            customerDto = await customerService.UpdateCustomer(customerDto);
         }
         catch (Exception ex)
         {

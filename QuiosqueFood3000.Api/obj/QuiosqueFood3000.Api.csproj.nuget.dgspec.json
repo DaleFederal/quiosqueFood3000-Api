@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj": {}
+    "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Api\\QuiosqueFood3000.Api.csproj": {}
   },
   "projects": {
-    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj": {
+    "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Api\\QuiosqueFood3000.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj",
+        "projectUniqueName": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Api\\QuiosqueFood3000.Api.csproj",
         "projectName": "QuiosqueFood3000.Api",
-        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/QuiosqueFood3000.Api.csproj",
-        "packagesPath": "/home/toshio/.nuget/packages/",
-        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Api/obj/",
+        "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Api\\QuiosqueFood3000.Api.csproj",
+        "packagesPath": "C:\\Users\\Vitor\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/toshio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj": {
-                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj"
+              "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\QuiosqueFood3000.Application.csproj": {
+                "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\QuiosqueFood3000.Application.csproj"
               },
-              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj": {
-                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj"
+              "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj": {
+                "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj"
               }
             }
           }
@@ -44,7 +50,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -88,34 +95,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj": {
+    "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\QuiosqueFood3000.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj",
+        "projectUniqueName": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\QuiosqueFood3000.Application.csproj",
         "projectName": "QuiosqueFood3000.Application",
-        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj",
-        "packagesPath": "/home/toshio/.nuget/packages/",
-        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/obj/",
+        "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\QuiosqueFood3000.Application.csproj",
+        "packagesPath": "C:\\Users\\Vitor\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/toshio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj": {
-                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj"
+              "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj": {
+                "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj"
               }
             }
           }
@@ -129,7 +142,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -152,6 +166,10 @@
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -170,26 +188,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj": {
+    "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Domain\\QuiosqueFood3000.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj",
+        "projectUniqueName": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Domain\\QuiosqueFood3000.Domain.csproj",
         "projectName": "QuiosqueFood3000.Domain",
-        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj",
-        "packagesPath": "/home/toshio/.nuget/packages/",
-        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/obj/",
+        "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Domain\\QuiosqueFood3000.Domain.csproj",
+        "packagesPath": "C:\\Users\\Vitor\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/toshio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -207,7 +231,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -240,34 +265,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj": {
+    "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj",
+        "projectUniqueName": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj",
         "projectName": "QuiosqueFood3000.Infraestructure",
-        "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj",
-        "packagesPath": "/home/toshio/.nuget/packages/",
-        "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/obj/",
+        "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Vitor\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/toshio/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj": {
-                "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Domain/QuiosqueFood3000.Domain.csproj"
+              "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Domain\\QuiosqueFood3000.Domain.csproj": {
+                "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Domain\\QuiosqueFood3000.Domain.csproj"
               }
             }
           }
@@ -281,7 +312,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -326,7 +358,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -697,6 +697,19 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Npgsql/9.0.2": {
         "type": "package",
         "dependencies": {
@@ -2555,6 +2568,36 @@
         "readme.md"
       ]
     },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "Npgsql/9.0.2": {
       "sha512": "hCbO8box7i/XXiTFqCJ3GoowyLqx3JXxyrbOJ6om7dr+eAknvBNhhUHeJVGAQo44sySZTfdVffp4BrtPeLZOAA==",
       "type": "package",
@@ -3057,36 +3100,44 @@
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Microsoft.Extensions.DependencyInjection >= 9.0.0",
+      "Newtonsoft.Json >= 13.0.3",
       "QuiosqueFood3000.Infraestructure >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/home/toshio/.nuget/packages/": {}
+    "C:\\Users\\Vitor\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj",
+      "projectUniqueName": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\QuiosqueFood3000.Application.csproj",
       "projectName": "QuiosqueFood3000.Application",
-      "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/QuiosqueFood3000.Application.csproj",
-      "packagesPath": "/home/toshio/.nuget/packages/",
-      "outputPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Application/obj/",
+      "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\QuiosqueFood3000.Application.csproj",
+      "packagesPath": "C:\\Users\\Vitor\\.nuget\\packages\\",
+      "outputPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/toshio/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj": {
-              "projectPath": "/home/toshio/Fiap/Tech-Challenge-FIAP/src/QuiosqueFood3000.Infraestructure/QuiosqueFood3000.Infraestructure.csproj"
+            "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj": {
+              "projectPath": "D:\\Downloads\\[FIAP]\\Dale\\DaleFederal\\quiosqueFood3000-Api\\QuiosqueFood3000.Infraestructure\\QuiosqueFood3000.Infraestructure.csproj"
             }
           }
         }
@@ -3100,7 +3151,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -3123,6 +3175,10 @@
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
           }
         },
         "imports": [
@@ -3141,7 +3197,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/toshio/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

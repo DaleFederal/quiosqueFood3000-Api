@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuiosqueFood3000.Api", "..\QuiosqueFood3000.Api\QuiosqueFood3000.Api.csproj", "{E6FDFAAD-81E1-E117-D18B-69F85014B569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuiosqueFood3000.Application", "..\QuiosqueFood3000.Application\QuiosqueFood3000.Application.csproj", "{BE2F0441-EE05-70D5-91B4-22A97A9C37E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuiosqueFood3000.Domain", "..\QuiosqueFood3000.Domain\QuiosqueFood3000.Domain.csproj", "{13BDF378-556B-868F-93D5-F1567E234664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuiosqueFood3000.Infraestructure", "..\QuiosqueFood3000.Infraestructure\QuiosqueFood3000.Infraestructure.csproj", "{328DC14B-12BA-14B4-FB26-D80A28A8F1B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6FDFAAD-81E1-E117-D18B-69F85014B569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FDFAAD-81E1-E117-D18B-69F85014B569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FDFAAD-81E1-E117-D18B-69F85014B569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FDFAAD-81E1-E117-D18B-69F85014B569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE2F0441-EE05-70D5-91B4-22A97A9C37E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2F0441-EE05-70D5-91B4-22A97A9C37E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2F0441-EE05-70D5-91B4-22A97A9C37E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2F0441-EE05-70D5-91B4-22A97A9C37E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BDF378-556B-868F-93D5-F1567E234664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13BDF378-556B-868F-93D5-F1567E234664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BDF378-556B-868F-93D5-F1567E234664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13BDF378-556B-868F-93D5-F1567E234664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{328DC14B-12BA-14B4-FB26-D80A28A8F1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328DC14B-12BA-14B4-FB26-D80A28A8F1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328DC14B-12BA-14B4-FB26-D80A28A8F1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328DC14B-12BA-14B4-FB26-D80A28A8F1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66AAEEDD-C107-4B6B-8035-98EC87F2D83F}
+	EndGlobalSection
+EndGlobal

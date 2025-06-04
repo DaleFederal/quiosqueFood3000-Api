@@ -5,7 +5,7 @@ namespace QuiosqueFood3000.Api.Services.Interfaces;
 public interface ICustomerService
 {
     Task<CustomerDto?> GetCustomerByCpf(string cpf);
-    CustomerDto RegisterCustomer(CustomerDto customerDto);
+    Task<CustomerDto> RegisterCustomer(CustomerDto customerDto);
     void RemoveCustomer(CustomerDto customerDto);
-    CustomerDto UpdateCustomer(CustomerDto customerDto);
+    Task<CustomerDto> UpdateCustomer(CustomerDto customerDto);
 }
