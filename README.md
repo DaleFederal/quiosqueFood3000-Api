@@ -25,7 +25,8 @@ Como documentação do projeto foi feito um Event Storming entre os membros do g
 
 - Documentação [Event Storming](https://miro.com/app/board/uXjVLEMVBGE=/)
 - Video explicativo do [Tech Challenge - Fase 1](https://drive.google.com/file/d/15svsZTA-br8HuAhEG3dh0rw4ogem8Fid/view?usp=sharing)
-- Video explicativo do [Tech Challenge - Fase 2](https://drive.google.com/file/d/129m0TCm2aMIT78FVRTBOPBsQ6-Q_8idD/view?usp=sharing) 
+- Video explicativo do [Tech Challenge - Fase 2](https://drive.google.com/file/d/129m0TCm2aMIT78FVRTBOPBsQ6-Q_8idD/view?usp=sharing)
+- Video explicativo do [Tech Challenge - Fase 3](https://drive.google.com/file/d/1hYyHso2758-xBn7ywg6KkZ267hucT3-l/view?usp=drive_link) 
 
 ## 💻  Utilizando a API REST .NET
 
